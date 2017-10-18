@@ -20,6 +20,13 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    @IBAction func alertButtonTapped(_ sender: Any) {
+        let alertControl = UIAlertController(title: "Title", message: "Alert button tapped", preferredStyle: .alert)
+        let alertAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil)
+        alertControl.addAction(alertAction)
+        present(alertControl, animated: true, completion: nil)
+        
+    }
+    
 }
 
